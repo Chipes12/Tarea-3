@@ -40,7 +40,7 @@ class _BookDetailsState extends State<BookDetails> {
                 },
               ),
               IconButton(
-                icon: Icon(Icons.share),
+                icon: FaIcon(FontAwesomeIcons.share),
                 onPressed: () {
                   Share.share('check out this book  ${book["volumeInfo"]["title"]}\n${book["volumeInfo"]["canonicalVolumeLink"]}');
                 },
