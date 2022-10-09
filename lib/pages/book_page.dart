@@ -100,7 +100,7 @@ class _BookDetailsState extends State<BookDetails> {
                           padding: const EdgeInsets.only(right: 5, left: 5),
                           child: Text(
                             "${book["volumeInfo"].containsKey("description") ? book["volumeInfo"]["description"] : "No description aviable"}",
-                            maxLines: _extendedDescription ? 60 : 5,
+                            maxLines: _extendedDescription ? 80 : 5,
                             overflow: _extendedDescription
                                 ? null
                                 : TextOverflow.ellipsis,
